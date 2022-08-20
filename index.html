@@ -17,9 +17,12 @@
     </div>
     <div class="body">
         <div id="timerBox">
-            <img src="/images/babyplant.png" alt="Baby Plant">
+            <img src="images/plantv1.png" alt="Baby Plant" id="plantv1">
             <p id="countdown">10:00</p>
-            <button id="plantButton">Plant!</button>
+            <div class="buttons">
+                <button id="plantButton" onclick="updateTimer()">Plant!</button>
+                <button id="giveupButton" onclick="resetTimer()">Give Up</button>
+            </div>
         </div>
     </div>
     <div class="footer">

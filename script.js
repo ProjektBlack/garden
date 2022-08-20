@@ -1,7 +1,6 @@
 const startingMinutes = 10;
 let time = startingMinutes * 60;
 const countdownEl = document.getElementById('countdown');
-setInterval(updateTimer, 1000);
 function updateTimer() {
     const minutes = Math.floor(time/60);
     let seconds = time % 60;
@@ -14,4 +13,5 @@ function updateTimer() {
     countdownEl.innerHTML = `${minutes}: ${seconds}`;
     time--;
 }
+setInterval(updateTimer, 1000);
 

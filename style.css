@@ -15,8 +15,8 @@ body
     flex-direction: column;
     flex: 1%;
     padding: 1%;
-    border-bottom-left-radius: 55%;
-    border-bottom-right-radius: 55%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .links
 {
@@ -27,7 +27,7 @@ body
 a
 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:x-large;
+    font-size: 100%;
     color: azure;
     margin: 5%;
 }
@@ -36,15 +36,71 @@ a
     height: 5%;
     width: 10%;
     padding: 0%;
+    margin-left: 2%;
 }
-.timerBox
+.body
+{
+    padding: 7%;
+}
+#timerBox
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#countdown
+{
+    align-self: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    margin-bottom: 1%;
+}
+#plantv1
+{
+    align-self: center;
+}
+.buttons
 {
     display: flex;
     justify-content: center;
-    flex: 1;
 }
-#timer
+#plantButton
 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
+    align-self: center;
+    border-radius: 20px;
+    width: 15%;
+    padding: 1%;
+    background-color: rgb(41, 167, 72) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 150%;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 1%;
+}
+#giveupButton
+{
+    align-self: center;
+    border-radius: 20px;
+    width: 15%;
+    padding: 1%;
+    background-color: maroon ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 150%;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 1%;
+}
+.footer
+{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    background-color: saddlebrown;
 }   
+.credits
+{
+    color: aliceblue;
+    align-self: center;
+}
