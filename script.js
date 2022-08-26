@@ -1,4 +1,4 @@
-const startingMinutes = 0.1;
+const startingMinutes = 10;
 let time = startingMinutes * 60;
 const countdownEl = document.getElementById('countdown');
 isStopped = false;
@@ -13,8 +13,19 @@ function updateTimer() {
     }
     countdownEl.innerHTML = `${minutes}: ${seconds}`;
     time--;
+    if(time==0)
+    {
+        stopTimer();
+        countdownEl.innerHTML = `${0}: ${"00"}`;
+    }
 }
 function startTimer()
 {
-    setInterval(updateTimer,1000);
+    timerInterval = setInterval(updateTimer,1000);
+}
+function stopTimer()
+{
+    clearInterval(timerInterval);
+    time = startingMinutes*60;
+    countdownEl.innerHTML = `${10}: ${"00"}`;
 }
